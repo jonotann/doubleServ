@@ -33,10 +33,10 @@ function handleRequest2(request, response) {
     response.end("Second Server Works! Path hit: " + request.url);
 };
 //SECOND HANDLER
-var server2 = http.createServer(handleRequest);
+var server2 = http.createServer(handleRequest2);
 //SECOND SERVER LISTEN
 server2.listen(PORT2, function() {
 
     // Logs on the second server
-    console.log("You suk, Server listening on: http://localhost: " + PORT2);
+    console.log("You suk, Server listening on: http://localhost:" + PORT2);
 });
